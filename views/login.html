@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="aprendiendoDiseñoWeb">
+    <meta name="author" content="Dante Delprato">
+    <meta name="description" content="Proyecto Mercado Liebre DH">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  
+  <!--FavIcon-->
+  <link rel="shortcut icon" href="" type="/images/favico.png">
+
+  <!-- Titulo de la Pag -->
+  <title>Mercado Liebre - Login</title>
+</head>
+
+<body>
+  <!--Encabezados-->
+  <header>
+
+    <!-- ------------------- -->
+    <!--      CABECERA       -->
+    <!-- ------------------- -->
+
+    <div class="main-header">
+      <!-- LOGO -->
+      <img class="logo" src="/images/logo-mercado-liebre.svg" alt="Logo Completo de la Pag de Mercado Liebre">
+
+      <!-- SEARCH BAR -->
+      <form class="searchbar" action="GET">
+        <input type="text" name="buscar" id="search" placeholder="Buscar producto, marca, precio">
+        <button type="submit" title="buscar">
+          <!-- icono de la lupita 🔍 -->
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+
+      <h2 name="promo">
+        <i class="fa-solid fa-hand-holding-dollar"></i>
+        Compra en cuotas y sin tarjeta de Crédito
+      </h2>
+    </div>
+
+
+    <!-- ------------------- -->
+    <!-- Barra de Navegacion -->
+    <!-- ------------------- -->
+    <nav class="navegation">
+
+      <!-- NAV BAR -->
+      <ul class="navbar">
+        <li> <a href="/ofertas" target="_blank" rel="noopener noreferrer">Oferta</a> </li>
+        <li> <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer">Tiendas Oficiales</a>
+        </li>
+        <li> <a href="http://" target="_blank" rel="noopener noreferrer">Vender</a> </li>
+        <li> <a href="http://" target="_blank" rel="noopener noreferrer">Ayuda</a> </li>
+      </ul>
+
+      <!-- LOGIN BAR -->
+      <ul class="loginbar">
+        <li>
+          <a href="http://" target="_blank" rel="noopener noreferrer">Creá tu cuenta</a>
+          <i class="fa-regular fa-id-card"></i>
+        </li>
+        <li>
+          <a href="http://" target="_blank" rel="noopener noreferrer">Ingresá</a>
+          <i class="fa-solid fa-arrow-right-to-bracket"></i>
+        </li>
+        <li>
+          <a href="http://" target="_blank" rel="noopener noreferrer">Mis compras</a>
+          <i class="fa-solid fa-basket-shopping"></i>
+        </li>
+      </ul>
+
+      <!-- Boton Hamburguesa -->
+
+      <button class="burger-menu" type="button" title="hamburguesa">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+    </nav>
+
+
+  </header>
+  <section class="banner">
+    <img src="images/img-home-banner.jpg" alt="Banner de ofertas">
+  </section>
+
+  <main class="login">
+    <form action="/" method="POST">
+      <input type="text" name="user" placeholder="Nombre de usuario">
+      <input type="password" name="pass" placeholder="Elegí tu contraseña">
+      <input type="submit" value="Enviar">
+    </form>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+
+</html>
