@@ -2,9 +2,10 @@ const express = require('express');
 const app = express();
 app.use(express.static('public'));
 
+const PORT = process.env.PORT || 3000;
 
-app.listen(8000, ()=>{
-    console.log('Servidor online en puerto 8000');
+app.listen(PORT, ()=>{
+    console.log(`Servidor online en puerto ${PORT}`);
 });
 
 app.get('/', (req,res)=>{
