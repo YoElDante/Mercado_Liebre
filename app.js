@@ -8,6 +8,10 @@ app.listen(PORT, ()=>{
     console.log(`Servidor online en puerto ${PORT}`);
 });
 
+// app.listen(3000, ()=>{
+//     console.log(`Servidor online en puerto 3000`);
+// });
+
 app.get('/', (req,res)=>{
     res.sendFile(__dirname + '/views/home.html');
 });

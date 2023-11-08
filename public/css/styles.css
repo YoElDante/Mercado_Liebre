@@ -74,11 +74,17 @@ body {
 
 
 h3 {
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 p {
-    font-size: 12px;
+    font-size: 0.75rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* -------------------- */
@@ -90,28 +96,52 @@ header {
     padding: 1rem;
 }
 
-.logo {
-    width: 200px;
+.main-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header h2 {
-    text-align: center;
+.logo {
+    width: 50%;
 }
 
 .searchbar {
-    display: none;
+    padding: 1rem;
+    width: 50%;
+}
+
+.searchbar input{
+    width: 75%;
+}
+
+.promo {
+    flex-grow: 1;
+    text-align: center;
+padding: 1rem;
+}
+
+
+.navegation{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
 }
 
 .navbar,
 .loginbar {
+    font-size: 0.75rem;
     display: none;
 }
 
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.navbar li{
+    margin-right: 0.5rem;
 }
+.loginbar li{
+    margin-left: 0.5rem;
+}
+
 
 .navbar a,
 .loginbar a {
@@ -134,7 +164,6 @@ ul {
     -moz-border-radius: 20%;
     -ms-border-radius: 20%;
     border-radius: 20%;
-    margin-top: 1rem;
 }
 
 /* -------------------- */
@@ -184,11 +213,11 @@ main article:hover .description {
 }
 
 main section article {
-    transition: all 450ms;
     -webkit-transition: all 450ms;
     -moz-transition: all 450ms;
     -ms-transition: all 450ms;
     -o-transition: all 450ms;
+    transition: all 450ms;
 }
 
 main article:hover {
@@ -284,6 +313,20 @@ footer li:hover i{
 }
 
 @media (min-width: 361px) {
+
+    .searchbar{
+        display: flex;
+        justify-content: end;
+    }
+
+    .seachbar input{
+    }
+    
+    .navbar,
+    .loginbar {
+        display: flex;
+    }
+
     main section article .description {
         display: block;
     }
@@ -305,22 +348,46 @@ footer li:hover i{
     .discount {
         width: 50%;
     }
+    
+    .burger-menu{
+        display:none;
+    }
 }
 
+/* Vista Tablet */
 @media (min-width: 769px) {
+
+    .logo, .searchbar, .promo{
+        width: 30%;
+    }
     main section div.products article {
         width: 22%;
     }
+
+    footer ul{
+        display:flex;
+        justify-content: space-between;
+    }
+
+    footer li{
+        width: 30%;
+    }
+
+    footer li p{
+        margin-top: 0.5rem;
+        line-height: 1rem;
+    }
+
 }
 
 
 /* LOGIN */
 [type="submit"] {
-    transition: all 450ms;
     -webkit-transition: all 450ms;
     -moz-transition: all 450ms;
     -ms-transition: all 450ms;
     -o-transition: all 450ms;
+    transition: all 450ms;
 }
 
 [type="submit"]:hover {
